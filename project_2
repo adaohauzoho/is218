@@ -1,12 +1,9 @@
 <?php
 
-
-
-$username = 'ye7';
-$password = 'exGOzuUQ5';
+$username = 'adu2';
+$password = 'ada31094719';
 $hostname = 'sql1.njit.edu';
-$dbname = 'ye7';
-
+$dbname = 'adu2';
 
 $link = mysql_connect($hostname, $username, $password);
 if (!$link) {
@@ -30,7 +27,7 @@ echo "<br />";
 $sql = "SELECT DISTINCT INSTNM FROM `TABLE 12` AS a INNER JOIN `TABLE 15` AS b ON a.UNITID=b.UNITID ORDER BY b.EFTOTLM DESC LIMIT 5";
 $result = mysql_query($sql,$link);
 if (!$result) {
-    echo "DB Error, could not query the database\n";
+    echo "Database Error, could not query the database\n";
     echo 'MySQL Error: ' . mysql_error();
     exit;
 }
